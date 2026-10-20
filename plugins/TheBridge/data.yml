@@ -1,0 +1,48 @@
+games:
+- condo
+Inventory:
+  Bar:
+    Item0:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4790
+      id: minecraft:iron_sword
+      count: 1
+      schema_version: 1
+    Item1:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4790
+      id: minecraft:bow
+      count: 1
+      schema_version: 1
+    Item2:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4790
+      id: minecraft:diamond_pickaxe
+      count: 1
+      components:
+        minecraft:enchantments: '{"minecraft:efficiency":2}'
+      schema_version: 1
+    Item3:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4790
+      id: minecraft:terracotta
+      count: 64
+      schema_version: 1
+    Item4:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4790
+      id: minecraft:terracotta
+      count: 64
+      schema_version: 1
+    Item5:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4790
+      id: minecraft:golden_apple
+      count: 16
+      schema_version: 1
+    Item8:
+      ==: org.bukkit.inventory.ItemStack
+      DataVersion: 4790
+      id: minecraft:arrow
+      count: 1
+      schema_version: 1

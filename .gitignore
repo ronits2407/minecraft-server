@@ -63,3 +63,5 @@ plugins/VeinMiner/*.db
 plugins/spark/tmp/
 plugins/Geyser-Spigot/cache/
 plugins/bStats/temp/
+plugins/TheBridge/playersData.yml
+plugins/TheBridge/data/player/

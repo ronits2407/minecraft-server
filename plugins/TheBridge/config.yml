@@ -1,0 +1,150 @@
+# +-------------------------------------------------------------------+
+# |                     T H E   B R I D G E                           |
+# |                 Premium Minecraft Mini-Game Config                |
+# +-------------------------------------------------------------------+
+
+lobby:
+  enabled: true
+  world: hub
+  x: -61.5
+  y: -31.0
+  z: -49.5
+  yaw: 180.0
+  pitch: 0.0
+
+need_permission_to_join: false
+killed_msg: '&8[&6TheBridge&8] &f<victim> &fdied!'
+killed_by_killer_msg: '&8[&6TheBridge&8] &f<victim> &fwas slain by &a<damager>'
+death_knocked_msg: '&8[&6TheBridge&8] &f<victim> &fwas knocked into the void by &a<damager>'
+death_fall_void_msg: '&8[&6TheBridge&8] &f<victim> &ffell into the void!'
+join_msg: '&8[&6TheBridge&8] &a<player> &7joined the game!'
+leave_msg: '&8[&6TheBridge&8] &c<player> &7left the game!'
+
+Starting_Title: '&aStarting in'
+Starting_Subtitle: '&e<time> seconds!'
+Starting_Actionbar: '&aGame starts in <time> seconds!'
+Waiting_For_Players_Title: '&6Waiting for players...'
+Player_scores: '&a&l<player> &6scored a goal!'
+All_Player_leave: '&cAll players left the game!'
+No_games_available: '&cNo games available right now!'
+Game_ending: '&6Game over!'
+Team_wins: '&6&l<team> &awins the game!'
+Starting_game: '&a&lGO!'
+Fight: '&c&lFIGHT!'
+You_are_already_in_game: '&cYou are already in a game!'
+You_are_not_in_game: '&cYou are not in a game!'
+Game_couldnt_be_found: '&cThat arena could not be found!'
+incorrect_use_of_command: '&cInvalid command syntax!'
+too_many_players: '&cGame is full!'
+
+Waiting_In_Lobby: 15
+Waiting_For_Next_Round: 4
+Waiting_Before_End: 10
+Winning_Score: 5
+Start_percentage: 0.75
+Arrow_refresh: 3
+Fall_damage: false
+Spectator_border: 25
+Border_side: 4
+Border_Up: 8
+Save_Locally: true
+End_Command: ''
+Fireworks_enabled: true
+Save_players_inventory: false
+
+Teams:
+  Team1:
+    ColorPrefx: '&c'
+    ColorName: 'RED'
+    Color:
+      r: 237
+      g: 40
+      b: 40
+    BlockMaterial: RED_TERRACOTTA
+  Team2:
+    ColorPrefx: '&9'
+    ColorName: 'BLUE'
+    Color:
+      r: 0
+      g: 100
+      b: 255
+    BlockMaterial: BLUE_TERRACOTTA
+  Team3:
+    ColorPrefx: '&e'
+    ColorName: 'YELLOW'
+    Color:
+      r: 255
+      g: 255
+      b: 0
+    BlockMaterial: YELLOW_TERRACOTTA
+  Team4:
+    ColorPrefx: '&a'
+    ColorName: 'GREEN'
+    Color:
+      r: 100
+      g: 255
+      b: 0
+    BlockMaterial: LIME_TERRACOTTA
+
+Lobby:
+  Scoreboard_Title: '&e&lTHE BRIDGE'
+  waiting_text: 'Waiting...'
+
+Game:
+  Scoreboard_Title: '&e&lTHE BRIDGE'
+  kills_text: 'Kills'
+  scores_text: 'Goals'
+
+Menu:
+  Title: 'Play The Bridge'
+  Item:
+    Material: ORANGE_TERRACOTTA
+  two_teams:
+    solo:
+      title: '&a1vs1 (Condo)'
+      lore:
+      - '&7Hypixel classic duels'
+      - '&e➤ Click to join 1v1 match!'
+    double:
+      title: '&a2vs2 (Condo)'
+      lore:
+      - '&7Team up with a friend'
+      - '&e➤ Click to join 2v2 match!'
+    triple:
+      title: '&a3vs3'
+      lore:
+      - '&eClick to join the game.'
+    quadruple:
+      title: '&a4vs4'
+      lore:
+      - '&eClick to join the game.'
+  four_teams:
+    solo:
+      title: '&a1vs1vs1vs1'
+      lore:
+      - '&eClick to join the game.'
+    double:
+      title: '&a2vs2vs2vs2'
+      lore:
+      - '&eClick to join the game.'
+    triple:
+      title: '&a3vs3vs3vs3'
+      lore:
+      - '&eClick to join the game.'
+    quadruple:
+      title: '&a4vs4vs4vs4'
+      lore:
+      - '&eClick to join the game.'
+
+Exit:
+  name: '&c&lLeave Game'
+  material: RED_BED
+  list:
+  - '&7Click to return to the Lobby.'
+
+MySql:
+  Enabled: false
+  Database: thebridge
+  User: root
+  Password: ''
+  Port: 3306

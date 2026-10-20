@@ -1,0 +1,29 @@
+game:
+  world: tb_condo
+  bridge:
+    size:
+      y: 1
+    border: 35
+  center:
+    x: 2
+    y: 92
+    z: 0
+  pit:
+    x: -36
+    y: 90
+    z: 0
+  spawn:
+    x: -32.0
+    y: 103.0
+    z: 0.0
+  respawn:
+    x: -32.0
+    y: 103.0
+    z: 0.0
+  direction: POS_X
+  border: 15
+  team:
+    max-players: 1
+  teams:
+    team1: 0
+    team2: 1

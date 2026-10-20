@@ -40,6 +40,7 @@ The server operates a multi-world environment orchestrated via **Multiverse** an
 | **`world2`** | Secondary Survival | Additional survival world for sandbox play and survival builds. |
 | **`world3`** | Custom End Overhaul | Overhauled survival world featuring Nullscape multi-noise End biome generation and the *True Ending* + *Unlock The End* questline. |
 | **`world4`** | Hardcore / Alternate Survival | Dedicated Overworld, Nether (`world4_nether`), and End (`world4_the_end`) dimensions. |
+| **`tb_condo`** | The Bridge (Duels) | Hypixel's official *Condo* map for 1v1 and 2v2 bridging duels. |
 | **BedWars Arenas** | Minigame Arenas | 6 isolated arena dimensions automatically regenerated upon game start/finish. |
 
 ---
@@ -48,14 +49,14 @@ The server operates a multi-world environment orchestrated via **Multiverse** an
 
 The server runs **ScreamingBedWars** enhanced by the custom **`BedwarsWorldFive`** plugin. Six custom-calibrated arenas are configured with verified bed locations, team spawns, forge resource drops, and shopkeepers:
 
-| Arena Name | Map ID | Mode / Teams | Key Locations & Details |
-| :--- | :--- | :--- | :--- |
-| **Tentacle Tides** | `world5` | 4v4 (Red, Blue, Green, Yellow) | Center emerald generators, diagonal diamond generators, custom upgrade villager spawns. |
-| **Airshow** | `bwairshow` | Solo / Doubles | Aerial battlefield calibrated for fast-paced vertical bridging and rush gameplay. |
-| **Xemtori** | `bwxemtori` | 4-Team Party | Themed around custom Xemtori islands with symmetric bed defenses. |
-| **Gardens** | `bwgardens` | 4v4 Face-off | Red ($X = -94.5$) vs Blue ($X = +94.5$). Beds at $X = \pm 80$, forges on jungle slabs, dual diamond generators ($Z = \pm 51.5$), emerald generators at $(\pm 21, 77, \pm 21)$. |
-| **Aquarium** | `bwaquarium` | 4-Team Rotational | 4-fold rotational symmetry around underwater biome aesthetics. Beds at $(\pm 48, 87, 0)$ and $(0, 87, \pm 48)$. Diagonal diamond generators and central emerald towers. |
-| **Lighthouse** | `bwlighthouse` | 8-Base Solo / Doubles | 8 symmetric bases rotated around $(3, 0)$. Verified spruce plank spawns, stone brick forge slabs, 4 diamond generators, and 4 lighthouse emerald generators. |
+| Arena Name | Map ID | GUI Icon & Symbol | Mode / Teams | Key Locations & Details |
+| :--- | :--- | :--- | :--- | :--- |
+| **Tentacle Tides** | `world5` | `NAUTILUS_SHELL` (`&b⚓`) | 4v4 (Red, Blue, Green, Yellow) | Center emerald generators, diagonal diamond generators, custom upgrade villager spawns. |
+| **Airshow** | `bwairshow` | `FIREWORK_ROCKET` (`&c☁`) | Solo / Doubles | Hot air balloon arena calibrated for fast-paced vertical bridging and rush gameplay. |
+| **Xemtori** | `bwxemtori` | `CAKE` (`&a✦`) | 4-Team Party | Themed around custom Xemtori party islands with symmetric bed defenses. |
+| **Gardens** | `bwgardens` | `OAK_LEAVES` (`&a✿`) | 4v4 Face-off | Red ($X = -94.5$) vs Blue ($X = +94.5$). Beds at $X = \pm 80$, forges on jungle slabs, dual diamond generators ($Z = \pm 51.5$), emerald generators at $(\pm 21, 77, \pm 21)$. |
+| **Aquarium** | `bwaquarium` | `TROPICAL_FISH` (`&b✦`) | 4-Team Rotational | 4-fold rotational symmetry around underwater biome aesthetics. Beds at $(\pm 48, 87, 0)$ and $(0, 87, \pm 48)$. Diagonal diamond generators and central emerald towers. |
+| **Lighthouse** | `bwlighthouse` | `BEACON` (`&e⚡`) | 8-Base Solo / Doubles | 8 symmetric bases rotated around $(3, 0)$. Verified spruce plank spawns, stone brick forge slabs, 4 diamond generators, and 4 lighthouse emerald generators. |
 
 ---
 

@@ -425,17 +425,19 @@ public final class BedwarsWorldFive extends JavaPlugin implements Listener {
 
     private void openMapMenu(Player player) {
         Inventory inv = Bukkit.createInventory(null, 27, MAP_MENU);
-        inv.setItem(10, item(Material.CYAN_BED, "&bTentacle Tides",
+        ItemStack filler = item(Material.GRAY_STAINED_GLASS_PANE, " ");
+        for (int i = 0; i < 27; i++) inv.setItem(i, filler);
+        inv.setItem(10, item(Material.NAUTILUS_SHELL, "&b⚓ Tentacle Tides",
                 "&7Ocean arena by NoobGamerz", "&72-8 teams; 1-4 players per team", "&eClick to join"));
-        inv.setItem(11, item(Material.RED_BED, "&cAirshow (Hypixel)",
+        inv.setItem(11, item(Material.FIREWORK_ROCKET, "&c☁ Airshow (Hypixel)",
                 "&7Classic hot air balloon arena", "&78 teams; 1-2 players per team", "&eClick to join"));
-        inv.setItem(12, item(Material.LIME_BED, "&aXemtori Small BedWars",
-                "&7Four-island arena by XEMTORI", "&74 teams; 2 players per team", "&eClick to join"));
-        inv.setItem(14, item(Material.OAK_LEAVES, "&aGardens (Hypixel)",
+        inv.setItem(12, item(Material.CAKE, "&a✦ Xemtori Small BedWars",
+                "&7Four-island party arena by XEMTORI", "&74 teams; 2 players per team", "&eClick to join"));
+        inv.setItem(14, item(Material.OAK_LEAVES, "&a✿ Gardens (Hypixel)",
                 "&7Two-base 4v4 arena", "&72 teams; 4 players per team", "&eClick to join"));
-        inv.setItem(15, item(Material.TROPICAL_FISH, "&bAquarium (Hypixel)",
+        inv.setItem(15, item(Material.TROPICAL_FISH, "&b✦ Aquarium (Hypixel)",
                 "&7Four-base arena", "&74 teams; 4 players per team", "&eClick to join"));
-        inv.setItem(16, item(Material.BEACON, "&eLighthouse (Hypixel)",
+        inv.setItem(16, item(Material.BEACON, "&e⚡ Lighthouse (Hypixel)",
                 "&7Classic solo and doubles arena", "&78 teams; 2 players per team", "&eClick to join"));
         player.openInventory(inv);
     }
