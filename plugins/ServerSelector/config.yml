@@ -131,5 +131,5 @@ items:
       - "&8• &fMap: &eCondo &7(Hypixel Official Map)"
       - "&8• &fFormat: &a1v1 & 2v2 Duels"
       - ""
-      - "&e➤ Click to play The Bridge!"
-    command: "tb play"
+      - "&e➤ Click to join The Bridge!"
+    command: "tb join condo"

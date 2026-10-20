@@ -485,6 +485,15 @@ public final class BedwarsWorldFive extends JavaPlugin implements Listener {
 
     @EventHandler public void onClick(InventoryClickEvent event) {
         String title = event.getView().getTitle();
+        String plainTitle = ChatColor.stripColor(title);
+        if (plainTitle != null && (plainTitle.toLowerCase().contains("the bridge") || plainTitle.toLowerCase().contains("thebridge"))) {
+            event.setCancelled(true);
+            if (!(event.getWhoClicked() instanceof Player player)) return;
+            if (event.getClickedInventory() != event.getView().getTopInventory()) return;
+            player.closeInventory();
+            player.performCommand("tb join condo");
+            return;
+        }
         if (!title.equals(MENU) && !title.equals(PLAYERS) && !title.equals(TEAMS) && !title.equals(MAP_MENU)) return;
         event.setCancelled(true);
         if (!(event.getWhoClicked() instanceof Player admin)) return;
@@ -530,6 +539,8 @@ public final class BedwarsWorldFive extends JavaPlugin implements Listener {
 
     @EventHandler public void onDrag(InventoryDragEvent event) {
         String title = event.getView().getTitle();
+        String plainTitle = ChatColor.stripColor(title);
+        if (plainTitle != null && (plainTitle.toLowerCase().contains("the bridge") || plainTitle.toLowerCase().contains("thebridge"))) event.setCancelled(true);
         if (title.equals(MENU) || title.equals(PLAYERS) || title.equals(TEAMS) || title.equals(MAP_MENU)) event.setCancelled(true);
     }
 
