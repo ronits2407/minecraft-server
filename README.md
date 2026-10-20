@@ -5,6 +5,7 @@ A production-configured, high-performance **Purpur (1.20+)** Minecraft server fe
 ---
 
 ## 📑 Table of Contents
+- [Connecting to the Server (IITG Network)](#-connecting-to-the-server-iitg-network-only)
 - [Architecture & Worlds](#-architecture--worlds)
 - [BedWars Arenas](#-bedwars-arenas)
 - [Repository Structure](#-repository-structure)
@@ -13,6 +14,18 @@ A production-configured, high-performance **Purpur (1.20+)** Minecraft server fe
 - [Setup & Installation](#-setup--installation)
 - [Server Operation & Management](#-server-operation--management)
 - [World Generation & Overhaul Tools](#-world-generation--overhaul-tools)
+
+---
+
+## 🎮 Connecting to the Server (IITG Network Only)
+
+> [!IMPORTANT]
+> This server is hosted within the **IIT Guwahati (IITG) campus network**. You must be connected to the IITG LAN or campus Wi-Fi to reach and join the server.
+
+| Client Edition | Server Address (IP) | Port | Instructions |
+| :--- | :--- | :--- | :--- |
+| **Java Edition** (PC / Mac / Linux) | `172.16.115.66` | `8443` | Go to **Multiplayer** → **Add Server** → Server Address: `172.16.115.66:8443` |
+| **Bedrock Edition** (Mobile / Windows / Console) | `172.16.115.66` | `19132` | Go to **Play** → **Servers** → **Add Server** → Server IP: `172.16.115.66`, Port: `19132` |
 
 ---
 
