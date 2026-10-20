@@ -577,7 +577,7 @@ minecraft:tb_condo:
   alias: ''
   allow-advancement-grant: true
   allow-flight: false
-  allow-weather: true
+  allow-weather: false
   anchor-respawn: true
   auto-heal: true
   auto-load: true
@@ -608,12 +608,12 @@ minecraft:tb_condo:
     yaw: 0.0
   spawning:
     monster:
-      spawn: true
+      spawn: false
       tick-rate: '@unset'
       spawn-limit: '@unset'
       exceptions: []
     animal:
-      spawn: true
+      spawn: false
       tick-rate: '@unset'
       spawn-limit: '@unset'
       exceptions: []
