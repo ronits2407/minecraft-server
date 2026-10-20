@@ -1,0 +1,374 @@
+# ManhuntNG Messages
+config-version: 3
+
+# ============================================================================
+# General
+# ============================================================================
+prefix: '<gold>[Manhunt] <reset>'
+
+# ============================================================================
+# Command Errors
+# ============================================================================
+error.only-players: '<red>Only players can use this command!'
+error.no-permission: '<red>You don''t have permission!'
+error.player-not-found: '<red>Player not found!'
+error.not-in-game: '<red>{player} is not in the game!'
+error.already-joined: '<red>You have already joined!'
+error.cannot-change-roles: '<red>Cannot change roles during an active game!'
+error.cannot-change-mode: '<red>Cannot change mode during an active game!'
+error.cannot-change-seed: '<red>Cannot change seed during an active game!'
+error.cannot-change-world: '<red>Cannot change world during an active game!'
+error.invalid-game-mode: '<red>Invalid game mode! Must be ''normal'' or ''infection''.'
+error.invalid-start-mode: '<red>Invalid start mode! Must be ''dreamstart'' or ''headstart''.'
+error.invalid-seed: '<red>Invalid seed value!'
+error.no-active-game: '<red>No active game!'
+error.no-active-game-to-pause: '<red>No active game to pause!'
+error.no-paused-game: '<red>No paused game to resume!'
+error.only-owner-can-pause: '<red>Only the game owner can pause the game!'
+error.only-owner-can-resume: '<red>Only the game owner can resume the game!'
+error.failed-to-pause: '<red>Failed to pause the game!'
+error.failed-to-resume: '<red>Failed to resume the game!'
+error.message-empty: '<red>Message cannot be empty!'
+error.spectator-global-only: '<red>Spectators can only use global chat!'
+error.cannot-team-single: '<red>Cannot use team chat - you''re the only one on your team.'
+error.invalid-number: '<red>Invalid number!'
+error.not-enough-players: '<red>Not enough online players! Need at least {needed}.'
+
+# ============================================================================
+# Command Responses - Join / Leave
+# ============================================================================
+join.lobby: '<green>You joined the manhunt lobby!'
+join.spectator: '<green>You joined as a spectator!'
+join.broadcast: '<green>{player} has joined the game!'
+leave.lobby: '<yellow>You left the manhunt lobby.'
+leave.broadcast: '<yellow>{player} has left the game!'
+
+# ============================================================================
+# Command Responses - Role Assignment
+# ============================================================================
+role.set-runner-sender: '{player} <green>is now a Runner!'
+role.set-runner-target: '<green>You are now a Runner!'
+role.set-hunter-sender: '{player} <green>is now a Hunter!'
+role.set-hunter-target: '<green>You are now a Hunter!'
+role.not-joined: '<red>{player} has not joined the game!'
+role.removed-sender: '{player} <yellow>''s role has been removed!'
+role.removed-target: '<yellow>Your role has been removed!'
+role.shuffle-result: '<green>Randomly assigned {runners} runner(s) and {hunters} hunter(s)!'
+
+# ============================================================================
+# Command Responses - Admin Actions
+# ============================================================================
+admin.game-stopped: '<yellow>Game stopped.'
+admin.config-reloaded: '<green>Configuration reloaded!'
+admin.force-started: '<green>Game force started!'
+admin.kick-broadcast: '<red>{player} has been kicked from the game!'
+admin.kick-sender: '{player} <red>has been kicked from the game!'
+admin.kick-target: '<red>You have been kicked from the game!'
+admin.owner-show: '<gray>Game owner: <aqua>{player}'
+admin.owner-none: '<gray>No game owner set.'
+admin.owner-set-sender: '{player} <green>is now the game owner!'
+admin.owner-set-target: '<green>You are now the game owner!'
+admin.seed-show: '<gray>Current seed: <aqua>{seed}'
+admin.seed-none: '<gray>No seed set (will use random).'
+admin.seed-set: '<green>World seed set to <aqua>{seed} <green>("{input}")'
+admin.world-show: '<gray>Current world: <aqua>{world}'
+admin.world-none: '<gray>No world set (will generate a new world).'
+admin.world-cleared: '<green>World cleared. Will generate a new world on start.'
+admin.world-set: '<green>World set to <aqua>{world}<green>. Will use this world on start.'
+
+# ============================================================================
+# Command Responses - Mode
+# ============================================================================
+mode.current-game: '<gray>Current game mode: <aqua>{mode}'
+mode.current-start: '<gray>Current start mode: <aqua>{mode}'
+mode.game-set: '<green>Game mode set to <aqua>{mode}'
+mode.start-set: '<green>Start mode set to <aqua>{mode}'
+mode.infection-info: '<gray>Infection mode: Runners are permanently converted to hunters when killed.'
+
+# ============================================================================
+# Command Responses - Usage
+# ============================================================================
+usage.runner: '<red>Usage: <white>/manhunt runner <player>'
+usage.hunter: '<red>Usage: <white>/manhunt hunter <player>'
+usage.shuffle: '<red>Usage: <white>/manhunt shuffle <runners_count>'
+usage.remove: '<red>Usage: <white>/manhunt remove <player>'
+usage.kick: '<red>Usage: <white>/manhunt kick <player>'
+usage.mode: '<red>Usage: <white>/manhunt mode <normal|infection> <dreamstart|headstart>'
+usage.chat-command: '<red>Usage: /{label} <message>'
+usage.chat-mode: '<red>Usage: /manhunt chat <global|team>'
+
+# ============================================================================
+# Command Responses - Chat
+# ============================================================================
+chat.mode-show: '<gray>Current chat mode: '
+chat.mode-global: 'GLOBAL'
+chat.mode-team: 'TEAM'
+chat.mode-set-global: '<gray>Chat mode set to <gold>GLOBAL'
+chat.mode-set-team: '<gray>Chat mode set to <green>TEAM'
+
+# ============================================================================
+# Command Responses - Game Control
+# ============================================================================
+game.starting: '<yellow>Game is starting...'
+game.started: '<green>The hunt has begun!'
+game.stopped: '<red>Game has been stopped.'
+game.runner-wins-title: '<gold>Runner Wins!'
+game.runner-wins-subtitle: '<gray>The Ender Dragon has been defeated!'
+game.runner-wins-broadcast: '<gold><bold>The Runner has won the game!'
+game.hunters-win-title: '<red>Hunters Win!'
+game.hunters-win-subtitle: '<gray>The Runner has been eliminated!'
+game.hunters-win-broadcast: '<red><bold>The Hunters have won the game!'
+game.no-runners: '<red>No runners selected!'
+game.no-hunters: '<red>No hunters selected!'
+game.world-failed: '<red>Failed to create game world!'
+
+# ============================================================================
+# Countdown
+# ============================================================================
+countdown.title: '<yellow>{seconds}'
+countdown.subtitle: '<gray>Game starting in...'
+
+# ============================================================================
+# Headstart
+# ============================================================================
+headstart.title: '<yellow>Head Start!'
+headstart.subtitle: '<gray>Run! Hunters frozen for <red>{duration}<gray> seconds'
+headstart.hunter-title: '<red>Frozen!'
+headstart.hunter-subtitle: '<gray>Runner has a <red>{duration}<gray> second head start'
+headstart.broadcast: '<yellow>Head start! Runner has <red>{duration}<yellow> seconds to run!'
+headstart.countdown-hunter-title: '<red>{seconds}'
+headstart.countdown-hunter-subtitle: '<gray>You are frozen!'
+headstart.countdown-runner-title: '<yellow>{seconds}'
+headstart.countdown-runner-subtitle: '<gray>Head start remaining'
+headstart.ended: '<red>Hunters are now free! The hunt begins!'
+
+# ============================================================================
+# Pre-Hunt
+# ============================================================================
+prehunt.title: '<gold>Pre-Hunt'
+prehunt.subtitle: '<gray>Runner must damage a hunter to start the hunt'
+prehunt.broadcast: '<yellow>Pre-Hunt phase! The runner must punch any hunter to start the hunt.'
+prehunt.hunt-begun-title: '<red>The Hunt Has Begun!'
+prehunt.hunt-begun-subtitle: '<gray>Runner is on the loose!'
+prehunt.hunt-begun-broadcast: '<green>The hunt has started!'
+
+# ============================================================================
+# Force Start
+# ============================================================================
+forcestart.title: '<red>The Hunt Has Begun!'
+forcestart.subtitle: '<gray>Runner is on the loose!'
+forcestart.broadcast: '<green>The hunt has started! (Force started)'
+
+# ============================================================================
+# Infection
+# ============================================================================
+infection.broadcast: '<red>{player} <gray>has been infected and is now a Hunter!'
+
+# ============================================================================
+# Pause / Resume
+# ============================================================================
+pause.broadcast: '<yellow>Game has been paused!'
+pause.title: 'GAME PAUSED'
+pause.subtitle: 'Use /manhunt resume to continue'
+pause.action-bar: "\u23f8 PAUSED"
+pause.action-bar-timeout: " \u2014 {winner} win in {time}"
+pause.winner-hunters: 'Hunters'
+pause.winner-runner: 'Runner'
+pause.blocked: "<gray>The game is paused \u2014 action blocked"
+pause.runners-disconnected: '<yellow>All runners have disconnected \u2014 pausing game!'
+pause.hunters-disconnected: '<yellow>All hunters have disconnected \u2014 pausing game!'
+pause.timeout-hunters-win: '<red><bold>Time is up! The Hunters win (opposition by timeout)!'
+pause.timeout-runner-wins: '<gold><bold>Time is up! The Runner wins (opposition by timeout)!'
+resume.title: '<green>Game Resumed'
+resume.subtitle: '<gray>The game has been resumed'
+resume.broadcast: '<green>Game has been resumed!'
+
+# ============================================================================
+# Player Death / Respawn
+# ============================================================================
+death.runner-prefix: '(Runner) '
+death.hunter-prefix: '(Hunter) '
+death.runner-lives: '<red>(<bold>Runner</bold>) <white>{player} <gray>died - {lives} life(s) remaining'
+death.runner-eliminated: '<red>(<bold>Runner</bold>) <white>{player} <gray>has been eliminated'
+death.hunter-eliminated: '<red>(<bold>Hunter</bold>) <white>{player} <gray>has been eliminated'
+respawn.broadcast: '<yellow>{player} has respawned!'
+respawn.runner: '<green>(<bold>Runner</bold>) <white>{player} <gray>respawned - {lives} life(s) remaining'
+
+# ============================================================================
+# Scoreboard
+# ============================================================================
+scoreboard.title: '<gold>Manhunt'
+scoreboard.runner: 'Runner: '
+scoreboard.runners: 'Runners: '
+scoreboard.runner-none: 'Runner: None'
+scoreboard.hunters: 'Hunters: '
+scoreboard.time: 'Time: '
+scoreboard.dimension: 'Dimension: '
+scoreboard.dragon: '<dark_purple>Dragon: '
+scoreboard.dragon-alive: 'Alive'
+scoreboard.dragon-dead: 'Dead'
+scoreboard.dim-overworld: 'Overworld'
+scoreboard.dim-nether: 'Nether'
+scoreboard.dim-end: 'End'
+
+# ============================================================================
+# Action Bar
+# ============================================================================
+actionbar.runner-distance: "Runner \u2014 {distance}m"
+actionbar.tracking: "Tracking {portal} \u2014 {distance}m"
+actionbar.tracking-no-distance: 'Tracking {portal}'
+actionbar.portal-nether: 'Nether Portal'
+actionbar.portal-end: 'End Portal'
+actionbar.portal-default: 'Nether Portal'
+
+# ============================================================================
+# Chat
+# ============================================================================
+chat.global-prefix: '[Global] '
+chat.team-prefix: '[Team] '
+chat.separator: ': '
+
+# ============================================================================
+# Compass / Tracker
+# ============================================================================
+tracker.unavailable: '<red>Tracking unavailable: {player} has not entered the {dimension} yet.'
+
+# ============================================================================
+# World
+# ============================================================================
+world.load-failed: '<red>Failed to load world: {world}'
+
+# ============================================================================
+# Debug
+# ============================================================================
+debug.only-in-game: 'This command can only be used in-game.'
+debug.usage: '<yellow>Usage: <white>/manhunt debug lastknown'
+debug.header: '<gold><bold>Last Known Runner Locations:'
+debug.no-data: '<red>{dimension}: No data yet (runner has not entered this dimension)'
+debug.location: '<green>{dimension}: <white>({x}, {y}, {z}) in world ''{world}'''
+
+# ============================================================================
+# Help Menu
+# ============================================================================
+help.title: '<gold><bold>ManhuntNG'
+help.separator: " \u2014 "
+help.divider: "  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
+help.section-player: '  Player'
+help.section-admin: '  Admin'
+help.permission: 'Permission: '
+
+help.join.cmd: 'manhunt join'
+help.join.desc: 'Join the lobby'
+help.join.hover: 'Click to join'
+help.join.permission: 'manhunt.play'
+help.leave.cmd: 'manhunt leave'
+help.leave.desc: 'Leave the lobby'
+help.leave.hover: 'Click to leave'
+help.leave.permission: 'manhunt.play'
+help.pause.cmd: 'manhunt pause'
+help.pause.desc: 'Pause the game (owner only)'
+help.pause.hover: 'Click to pause'
+help.pause.permission: 'manhunt.play'
+help.resume.cmd: 'manhunt resume'
+help.resume.desc: 'Resume the game (owner only)'
+help.resume.hover: 'Click to resume'
+help.resume.permission: 'manhunt.play'
+help.chat.cmd: 'manhunt chat <global|team>'
+help.chat.desc: 'Switch chat mode'
+help.chat.hover: 'Click to switch chat mode'
+help.chat.permission: 'manhunt.play'
+help.g.cmd: 'g <message>'
+help.g.desc: 'Send a global message'
+help.g.hover: 'Click to send global message'
+help.g.permission: 'manhunt.play'
+help.t.cmd: 't <message>'
+help.t.desc: 'Send a team message'
+help.t.hover: 'Click to send team message'
+help.t.permission: 'manhunt.play'
+help.start.cmd: 'manhunt start'
+help.start.desc: 'Start the match (uses selected mode)'
+help.start.hover: 'Click to start'
+help.start.permission: 'manhunt.admin'
+help.stop.cmd: 'manhunt stop'
+help.stop.desc: 'Force stop the match'
+help.stop.hover: 'Click to stop'
+help.stop.permission: 'manhunt.admin'
+help.runner.cmd: 'manhunt runner <player>'
+help.runner.desc: 'Set the Runner'
+help.runner.hover: 'Click to set runner'
+help.runner.permission: 'manhunt.admin'
+help.hunter.cmd: 'manhunt hunter <player>'
+help.hunter.desc: 'Add a Hunter'
+help.hunter.hover: 'Click to set hunter'
+help.hunter.permission: 'manhunt.admin'
+help.remove.cmd: 'manhunt remove <player>'
+help.remove.desc: 'Remove a player''s role'
+help.remove.hover: 'Click to remove role'
+help.remove.permission: 'manhunt.admin'
+help.kick.cmd: 'manhunt kick <player>'
+help.kick.desc: 'Kick a player from the game'
+help.kick.hover: 'Click to kick player'
+help.kick.permission: 'manhunt.admin'
+help.owner.cmd: 'manhunt owner [player]'
+help.owner.desc: 'View/set game owner'
+help.owner.hover: 'Click to set owner'
+help.owner.permission: 'manhunt.admin'
+help.seed.cmd: 'manhunt seed [value]'
+help.seed.desc: 'View/set world seed'
+help.seed.hover: 'Click to set seed'
+help.seed.permission: 'manhunt.admin'
+help.world.cmd: 'manhunt world [name]'
+help.world.desc: 'View/set existing world to use'
+help.world.hover: 'Click to set world'
+help.world.permission: 'manhunt.admin'
+help.mode.cmd: 'manhunt mode <normal|infection> <dreamstart|headstart>'
+help.mode.desc: 'Set game and start mode'
+help.mode.hover: 'Click to set mode'
+help.mode.permission: 'manhunt.admin'
+help.forcestart.cmd: 'manhunt forcestart'
+help.forcestart.desc: 'Skip validation & start'
+help.forcestart.hover: 'Click to force start'
+help.forcestart.permission: 'manhunt.admin'
+help.shuffle.cmd: 'manhunt shuffle <runners_count>'
+help.shuffle.desc: 'Randomly assign runners and hunters'
+help.shuffle.hover: 'Click to randomly assign roles'
+help.shuffle.permission: 'manhunt.admin'
+help.reload.cmd: 'manhunt reload'
+help.reload.desc: 'Reload configuration'
+help.reload.hover: 'Click to reload'
+help.reload.permission: 'manhunt.admin'
+help.debug.cmd: 'manhunt debug'
+help.debug.desc: 'Show debug information'
+help.debug.hover: 'Click to show debug info'
+help.debug.permission: 'manhunt.admin'
+
+# ============================================================================
+# Game State Names (used in help menu)
+# ============================================================================
+state.waiting: 'Waiting'
+state.countdown: 'Countdown'
+state.headstart: 'Head Start'
+state.prehunt: 'Pre-Hunt'
+state.running: 'Running'
+state.paused: 'Paused'
+state.finished: 'Finished'
+
+# ============================================================================
+# Advanced - Enum Display Names
+# ============================================================================
+advanced.gamemode.normal: 'Normal'
+advanced.gamemode.infection: 'Infection'
+advanced.startmode.dreamstart: 'Dreamstart'
+advanced.startmode.headstart: 'Headstart'
+advanced.role.runner: 'Runner'
+advanced.role.hunter: 'Hunter'
+advanced.role.spectator: 'Spectator'
+advanced.phase.overworld-prep: 'Overworld Prep'
+advanced.phase.nether-rush: 'Nether Rush'
+advanced.phase.fortress-run: 'Fortress Run'
+advanced.phase.blaze-rod-run: 'Blaze Rod Run'
+advanced.phase.bastion-route: 'Bastion Route'
+advanced.phase.return-eyes: 'Return & Eyes'
+advanced.phase.stronghold-dive: 'Stronghold Dive'
+advanced.phase.end-rush: 'End Rush'
+advanced.phase.finale: 'Finale'

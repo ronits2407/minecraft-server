@@ -1,0 +1,32 @@
+# To custom categories or to edit the block lists, see the categories.yml
+
+MetricsEnabled: true
+PerformUpdateChecks: true
+
+DefaultActivationStrategy: SNEAK
+DefaultVeinMiningPattern: 'veinminer:default'
+CollectItemsAtSource: true
+CollectExperienceAtSource: true
+OnlyDamageOnFirstBlock: false
+NerfMcMMO: false
+Jobs:
+  NerfExpGain: false
+  NerfCurrencyGain: false
+
+# "RepairFriendly", "RepairFriendlyDurability", "MaxVeinSize", "Cost", and "DisabledWorlds"
+# may be defined per-category in the categories.yml file
+RepairFriendly: false
+RepairFriendlyDurability: 1
+MaxVeinSize: 64
+Cost: 0.0
+DisabledWorlds:
+- hub
+- world4
+- world4_nether
+- world4_the_end
+- world5
+
+DisabledGameModes:
+- CREATIVE
+- ADVENTURE
+- SPECTATOR

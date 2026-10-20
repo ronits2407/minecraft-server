@@ -1,0 +1,47 @@
+# UpgradeItems configuration
+settings:
+  # Max wheel spins per player per window. 0 = unlimited.
+  attemptLimit: 0
+  # Length of the attempt window in seconds.
+  attemptWindowSeconds: 300
+
+values:
+  # Multiplies the computed value of every item.
+  globalValueMultiplier: 1.0
+  # Hard-set the value of specific items, e.g. DIAMOND: 40.0
+  valueOverrides: {}
+  # Per-item value multipliers, e.g. NETHERITE_INGOT: 2.0
+  valueMultipliers: {}
+
+# Items that cannot be used in the wheel (neither as input nor as target).
+blacklist:
+  - BARRIER
+  - BEDROCK
+  - LIGHT
+  - COMMAND_BLOCK
+  - CHAIN_COMMAND_BLOCK
+  - REPEATING_COMMAND_BLOCK
+  - STRUCTURE_BLOCK
+  - STRUCTURE_VOID
+  - JIGSAW
+  - DEBUG_STICK
+  - SPONGE
+  - SHORT_GRASS
+  - TALL_GRASS
+  - FERN
+  - LARGE_FERN
+  - DEAD_BUSH
+  - DANDELION
+  - POPPY
+  - BLUE_ORCHID
+  - ALLIUM
+  - AZURE_BLUET
+  - RED_TULIP
+  - ORANGE_TULIP
+  - WHITE_TULIP
+  - PINK_TULIP
+  - OXEYE_DAISY
+  - CORNFLOWER
+  - LILY_OF_THE_VALLEY
+  - WITHER_ROSE
+  - TORCHFLOWER

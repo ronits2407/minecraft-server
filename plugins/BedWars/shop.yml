@@ -1,0 +1,72 @@
+data:
+  - stack: "white_wool;1;Blocks;Bridge and protect your bed"
+    items:
+      - stack: white_wool;16
+        properties: applycolorbyteam
+        price: 4 iron
+      - end_stone;12 for 24 iron
+      - oak_planks;16 for 4 gold
+      - stack: "glass;4;Blast-Proof Glass;Immune to explosions"
+        properties: applycolorbyteam
+        price: 12 iron
+      - ladder;16 for 4 iron
+      - obsidian;4 for 4 emerald
+  - stack: "iron_sword;1;Melee;Swords for close combat"
+    items:
+      - stone_sword for 10 iron
+      - iron_sword for 7 gold
+      - diamond_sword for 4 emerald
+  - stack: "iron_chestplate;1;Armor;Permanent armor for this match"
+    items:
+      - price: 40 iron
+        stack: "chainmail_chestplate;1;Chainmail Armor Set;Permanent full armor set"
+      - price: 12 gold
+        stack: "iron_chestplate;1;Iron Armor Set;Permanent full armor set"
+      - price: 6 emerald
+        stack: "diamond_chestplate;1;Diamond Armor Set;Permanent full armor set"
+  - stack: "iron_pickaxe;1;Tools;Break enemy bed defenses"
+    items:
+      - shears for 20 iron
+      - wooden_pickaxe for 10 iron
+      - iron_pickaxe for 20 iron
+      - diamond_pickaxe for 6 gold
+      - wooden_axe for 10 iron
+      - iron_axe for 20 iron
+  - stack: "bow;1;Ranged;Bows and arrows"
+    items:
+      - bow for 12 gold
+      - arrow;8 for 2 gold
+      - crossbow for 8 gold
+  - stack:
+      type: potion
+      display-name: Potions
+      lore:
+        - Jump higher or vanish for a short time
+      potion-type: strong_leaping
+    items:
+      - price: 1 emerald
+        stack:
+          type: potion
+          display-name: "Jump Boost V (45s)"
+          potion-type: strong_leaping
+      - price: 2 emerald
+        stack:
+          type: potion
+          display-name: "Invisibility (30s)"
+          potion-type: invisibility
+  - stack: "tnt;1;Utility;Explosives, healing, and mobility"
+    items:
+      - price: 4 gold
+        stack: "tnt;1;Auto-igniting TNT"
+        properties:
+          - name: AutoIgniteableTnt
+            explosion-time: 5
+      - price: 40 iron
+        properties: ThrowableFireball
+        stack:
+          type: fire_charge
+          display-name: Fireball
+      - golden_apple for 3 gold
+      - ender_pearl for 4 emerald
+      - water_bucket for 3 gold
+      - cooked_beef;8 for 4 iron

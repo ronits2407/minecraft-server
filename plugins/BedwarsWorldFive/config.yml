@@ -1,0 +1,52 @@
+map-built: true
+always-daytime: true
+daytime-ticks: 6000
+always-clear-weather: true
+bedwars-music:
+  enabled: true
+  sound: MUSIC_DISC_PIGSTEP
+  volume: 0.7
+  repeat-ticks: 2960
+upgrade-shop-locations:
+  world5:
+    Red: -25.5;66.0;-81.5
+    Blue: 38.5;66.0;-81.5
+    Green: 82.5;66.0;-25.5
+    Yellow: 82.5;66.0;38.5
+    Pink: -81.5;66.0;26.5
+    Aqua: 26.5;66.0;82.5
+    White: -37.5;66.0;82.5
+    Gray: -81.5;66.0;-37.5
+  bwairshow:
+    Red: -34.5;63;-82.5;90
+    Blue: 45.5;67;-82.5;90
+    Green: 83.5;67;-34.5;180
+    Yellow: 83.5;63;45.5;180
+    Aqua: 35.5;63;83.5;-90
+    White: -44.5;67;83.5;-90
+    Pink: -82.5;67;35.5;0
+    Gray: -82.5;63;-44.5;0
+  bwxemtori:
+    Red: -110.5;-26;125.5
+    Blue: -49.5;-26;67.5
+    Green: -107.5;-26;7.5
+    Yellow: -167.5;-26;64.5
+  bwgardens:
+    Red: -92.5;79;-2.5
+    Blue: 93.5;79;-2.5
+  bwaquarium:
+    Red: 1.5;87;-58.5
+    Blue: 58.5;87;1.5
+    Green: -4.5;87;58.5
+    Yellow: -58.5;87;-4.5
+  bwlighthouse:
+    Red: -84.5;65;-27.5
+    Blue: 30.5;65;-87.5
+    Green: 90.5;65;27.5
+    Yellow: -24.5;65;87.5
+    Aqua: -84.5;65;31.5
+    White: -23.5;65;-87.5
+    Pink: 90.5;65;-26.5
+    Gray: 30.5;65;87.5
+placement-preview-enabled: false
+placement-preview-arena: bwlighthouse

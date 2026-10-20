@@ -1,0 +1,23 @@
+name: BedwarsWorldFive
+version: 1.0.0
+main: local.ronit.bedwars.BedwarsWorldFive
+api-version: '26.1.2'
+depend: [BedWars, Multiverse-Core]
+softdepend: [ServerSelector]
+commands:
+  bwmaps:
+    description: Choose a BedWars map
+  bwsetup:
+    description: Configure World 5 BedWars teams and assign players
+    permission: bedwarsworld5.setup
+  bwmark:
+    description: Get the BedWars location marker or inspect saved marks
+    usage: /bwmark [give|status|undo]
+    permission: bedwarsworld5.setup
+  bwpreview:
+    description: Show or hide the World 5 shop and generator position preview
+    usage: /bwpreview [on|off|status]
+    permission: bedwarsworld5.setup
+permissions:
+  bedwarsworld5.setup:
+    default: op

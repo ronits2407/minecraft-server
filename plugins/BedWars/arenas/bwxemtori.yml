@@ -1,0 +1,175 @@
+name: bwxemtori
+pauseCountdown: 20
+gameTime: 3600
+world: bwxemtori
+pos1: -200;-70;-20;0.0;0.0
+pos2: -20;100;160;0.0;0.0
+specSpawn: -108.5;54;66.5;0.0;0.0
+lobbySpawn: -108.5;53;66.5;0.0;0.0
+lobbySpawnWorld: bwxemtori
+minPlayers: 2
+teams:
+  red:
+    isNewColor: true
+    color: RED
+    maxPlayers: 2
+    bed: -108;-26;118;0.0;0.0
+    spawn: -107.5;-26;121.5;0.0;0.0
+    actualName: Red
+  blue:
+    isNewColor: true
+    color: BLUE
+    maxPlayers: 2
+    bed: -57;-26;65;0.0;0.0
+    spawn: -52.5;-26;65.5;0.0;0.0
+    actualName: Blue
+  green:
+    isNewColor: true
+    color: GREEN
+    maxPlayers: 2
+    bed: -110;-26;14;0.0;0.0
+    spawn: -109.5;-26;10.5;0.0;0.0
+    actualName: Green
+  yellow:
+    isNewColor: true
+    color: YELLOW
+    maxPlayers: 2
+    bed: -161;-26;67;0.0;0.0
+    spawn: -164.5;-26;67.5;0.0;0.0
+    actualName: Yellow
+spawners:
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -107.5;-26;125.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Red
+  type: iron
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -107.5;-26;125.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Red
+  type: gold
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -49.5;-26;64.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Blue
+  type: iron
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -49.5;-26;64.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Blue
+  type: gold
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -110.5;-26;7.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Green
+  type: iron
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -110.5;-26;7.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Green
+  type: gold
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -167.5;-26;67.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Yellow
+  type: iron
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -167.5;-26;67.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Yellow
+  type: gold
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -149.5;-26;26.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: diamond
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -68.5;-26;25.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: diamond
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -148.5;-26;107.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: diamond
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -67.5;-26;106.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: diamond
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -90.5;-25;47.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: emerald
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -121.5;-25;49.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: emerald
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -126.5;-25;82.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: emerald
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -93.5;-25;81.5;0.0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: emerald
+stores:
+- loc: -104.5;-26;124.5;0.0;0.0
+  parent: 'true'
+  shop: shop.yml
+  name: Item Shop
+  type: VILLAGER
+- loc: -50.5;-26;62.5;0.0;0.0
+  parent: 'true'
+  shop: shop.yml
+  name: Item Shop
+  type: VILLAGER
+- loc: -112.5;-26;7.5;0.0;0.0
+  parent: 'true'
+  shop: shop.yml
+  name: Item Shop
+  type: VILLAGER
+- loc: -167.5;-26;70.5;0.0;0.0
+  parent: 'true'
+  shop: shop.yml
+  name: Item Shop
+  type: VILLAGER
+constant:
+  join-random-team-on-join: 'false'

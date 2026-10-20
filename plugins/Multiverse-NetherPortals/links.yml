@@ -1,0 +1,7 @@
+world4:
+  nether: world4_nether
+  end: world4_the_end
+world4_nether:
+  nether: world4
+world4_the_end:
+  end: world4

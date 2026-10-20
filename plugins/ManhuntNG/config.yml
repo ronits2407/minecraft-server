@@ -1,0 +1,61 @@
+# ManhuntNG Configuration
+config-version: 4
+
+runner:
+  respawnLimit: 0
+  keepInventory: false
+
+hunters:
+  respawnLimit: -1
+  keepInventory: false
+  keepArmor: false
+  keepOffhand: false
+
+tracking:
+  enabled: true
+  updateTicks: 5
+  showDistance: false
+
+headstart:
+  duration: 10
+  # whether hunters can use their compass during headstart
+  compassEnabled: false
+
+preHunt:
+  countdown: 5
+  hunterCircleRadius: 3.0
+  formationSearchRadius: 30
+
+chat:
+  # Log chat messages to the server console (when chat is intercepted during a game)
+  logToConsole: true
+
+scoreboard:
+  enabled: true
+
+actionBar:
+  enabled: false
+
+nameTags:
+  # Master toggle for role suffixes ([H] for hunters, [R] for runners)
+  enabled: false
+  # Show the suffix on the floating nametag above each player's head
+  overhead: false
+  # Show the suffix on the player's tab list entry
+  tabList: false
+  hunters:
+    # MiniMessage format (no deprecated & colour codes)
+    suffix: "<red>[H]</red>"
+  runners:
+    suffix: "<green>[R]</green>"
+
+potionEffects:
+  runner: []
+  hunters: []
+
+# Pause timeout. When the game is paused because an entire team disconnected,
+# the OPPOSING team automatically wins after `duration` seconds of being paused.
+# The countdown is shown in the pause action bar. Set enabled: false to disable.
+pauseTimeout:
+  enabled: false
+  duration: 120

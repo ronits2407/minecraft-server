@@ -1,0 +1,120 @@
+# ServerGUI Configuration
+
+# GUI Settings
+gui:
+  title: "&8&lWorld Selector"
+  size: 27  # 3 rows
+
+# Selector Item Settings
+selector:
+  material: COMPASS
+  name: "&6&lWorld Selector &7(Right-Click)"
+  lore:
+    - "&7Right-click to select your world!"
+    - "&7Switch between worlds anytime."
+  slot: 4  # Center slot on hotbar
+
+# Give selector on every join
+give-on-every-join: false
+
+# Allow selector in all worlds
+world-specific:
+  enabled: true
+  worlds:
+    - hub
+
+# Let players move or keep the compass
+lock-selector-item: false
+
+# Auto-refresh
+auto-refresh:
+  enabled: false
+  interval: 30
+
+# Decoration settings
+decoration:
+  enabled: true
+  alternate-colors: false
+  use-pattern: true
+  pattern:
+    - "111111111"  # Row 1
+    - "100000001"  # Row 2
+    - "111111111"  # Row 3
+  pattern-items:
+    "1":
+      material: BLUE_STAINED_GLASS_PANE
+      name: "&9✦"
+    "0":
+      material: GRAY_STAINED_GLASS_PANE
+      name: " "
+
+# GUI Items
+items:
+  world1:
+    slot: 11
+    material: GRASS_BLOCK
+    name: "&a&lWorld 1 &8• &aOriginal World"
+    lore:
+      - "&7Your existing survival world."
+      - "&7All bases, items, Nether & End intact."
+      - ""
+      - "&e➤ Click to enter World 1!"
+    command: "console:mvtp %player% ll:world"
+
+  world2:
+    slot: 12
+    material: DIAMOND_PICKAXE
+    name: "&6&lWorld 2 &8• &eVanilla Survival"
+    lore:
+      - "&7A fresh, clean survival world."
+      - "&7Unexplored landscape for a fresh start."
+      - ""
+      - "&e➤ Click to enter World 2!"
+    command: "console:mvtp %player% ll:world2"
+
+  hub:
+    slot: 13
+    material: NETHER_STAR
+    name: "&b&lSpawn Lobby &8• &bHub"
+    lore:
+      - "&7Return to the peaceful spawn lobby."
+      - ""
+      - "&e➤ Click to visit Lobby!"
+    command: "console:mvtp %player% hub"
+
+  world3:
+    slot: 14
+    material: ENDER_EYE
+    name: "&5&lWorld 3 &8• &dThe End Overhaul"
+    lore:
+      - "&7A unique survival RPG challenge:"
+      - "&8• &fNullscape: 384-height vertical alien End"
+      - "&8• &fUnlock The End: 4 keys seal the portal"
+      - "&8• &fTrue Ending: Multi-phase raid boss dragon"
+      - ""
+      - "&e➤ Click to enter World 3!"
+    command: "console:mvtp %player% ll:world3"
+
+  world4:
+    slot: 15
+    material: BOW
+    name: "&c&lWorld 4 &8• &c2v2 Manhunt"
+    lore:
+      - "&72 Speedrunners vs 2 Hunters!"
+      - "&7Simple vanilla gameplay with tracking compass."
+      - "&8• &fRunners: Kill the Ender Dragon to win"
+      - "&8• &fHunters: Stop and eliminate the runners"
+      - ""
+      - "&e➤ Click to enter Manhunt World!"
+    command: "console:mvtp %player% ll:world4"
+
+  world5:
+    slot: 16
+    material: RED_BED
+    name: "&c&lWorld 5 &8• &eBedWars"
+    lore:
+      - "&7Choose a BedWars arena to play."
+      - "&7Defend your bed and destroy the others."
+      - ""
+      - "&e➤ Click to choose a map!"
+    command: "bwmaps"

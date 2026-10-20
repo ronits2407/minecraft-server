@@ -1,0 +1,65 @@
+# =============================================================================
+# Minecraft Server .gitignore
+# =============================================================================
+
+# World saves, regions, dimensions, and level runtime data
+# (World datapacks are preserved via negative pattern)
+world/*
+!world/datapacks/
+world_nether/
+world_the_end/
+*.dat
+*.dat_old
+*.lock
+session.lock
+uid.dat
+
+# Server and runtime binaries
+server.jar
+libraries/
+versions/
+cache/
+.paper-remapped/
+**/.paper-remapped/
+
+# Compiled Java binaries and build outputs
+*.jar
+!custom/bedwars-world5/lib/*.jar
+*.class
+build/
+bin/
+target/
+
+# Server logs and crash dumps
+logs/
+crash-reports/
+*.log
+*.log.gz
+.console_history
+
+# Backups
+backups/
+
+# Dynamic player caches and server user lists
+usercache.json
+version_history.json
+ops.json
+whitelist.json
+banned-ips.json
+banned-players.json
+
+# Private keys, certificates, and auth secrets
+*.pem
+*.key
+
+# Plugin dynamic databases, player inventories, and temporary files
+plugins/Multiverse-Inventories/players/
+plugins/Multiverse-Inventories/worlds/
+plugins/Multiverse-Inventories/groups/
+plugins/Multiverse-Inventories/playernames.json
+plugins/BedWars/database/bw_stats_players.yml
+plugins/VeinMiner/*.db
+*.sqlite
+plugins/spark/tmp/
+plugins/Geyser-Spigot/cache/
+plugins/bStats/temp/

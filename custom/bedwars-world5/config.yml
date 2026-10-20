@@ -1,0 +1,52 @@
+waiting-lobby-built: false
+always-daytime: true
+daytime-ticks: 6000
+always-clear-weather: true
+placement-preview-enabled: false
+placement-preview-arena: world5
+upgrade-shop-locations:
+  world5:
+    Red: '-25.5;66;-81.5'
+    Blue: '38.5;66;-81.5'
+    Green: '82.5;66;-25.5'
+    Yellow: '82.5;66;38.5'
+    Pink: '-81.5;66;26.5'
+    Aqua: '26.5;66;82.5'
+    White: '-37.5;66;82.5'
+    Gray: '-81.5;66;-37.5'
+  bwairshow:
+    Red: '-34.5;63;-82.5;90'
+    Blue: '45.5;67;-82.5;90'
+    Green: '83.5;67;-34.5;180'
+    Yellow: '83.5;63;45.5;180'
+    Aqua: '35.5;63;83.5;-90'
+    White: '-44.5;67;83.5;-90'
+    Pink: '-82.5;67;35.5;0'
+    Gray: '-82.5;63;-44.5;0'
+  bwxemtori:
+    Red: '-110.5;-26;125.5'
+    Blue: '-49.5;-26;67.5'
+    Green: '-107.5;-26;7.5'
+    Yellow: '-167.5;-26;64.5'
+  bwgardens:
+    Red: '94.5;79;8.5;0'
+    Blue: '-93.5;79;-7.5;-180'
+  bwaquarium:
+    Red: '57.5;87;5.5;0'
+    Blue: '-4.5;87;57.5;90'
+    Green: '-57.5;87;-4.5;180'
+    Yellow: '5.5;87;-57.5;-90'
+  bwlighthouse:
+    Red: '-16.5;65;-87.5;-90'
+    Blue: '35.5;65;-87.5;-90'
+    Green: '91.5;65;-19.5;180'
+    Yellow: '91.5;65;32.5;180'
+    Aqua: '34.5;65;88.5;-90'
+    White: '-17.5;65;88.5;-90'
+    Pink: '-85.5;65;20.5;0'
+    Gray: '-85.5;65;-31.5;180'
+bedwars-music:
+  enabled: true
+  sound: MUSIC_DISC_PIGSTEP
+  volume: 0.7
+  repeat-ticks: 2960

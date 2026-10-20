@@ -1,0 +1,96 @@
+name: bwgardens
+pauseCountdown: 20
+gameTime: 3600
+world: bwgardens
+pos1: -115;50;-80;0;0.0
+pos2: 115;160;80;0;0.0
+specSpawn: -1.5;150;0.5;0;0.0
+lobbySpawn: -1.5;149;0.5;0;0.0
+lobbySpawnWorld: bwgardens
+minPlayers: 2
+teams:
+  blue:
+    isNewColor: true
+    color: BLUE
+    maxPlayers: 4
+    bed: -80;77;0;0;0.0
+    spawn: -93.5;79;0.5;-90.0;0.0
+    actualName: Blue
+  red:
+    isNewColor: true
+    color: RED
+    maxPlayers: 4
+    bed: 80;77;0;0;0.0
+    spawn: 94.5;79;0.5;90.0;0.0
+    actualName: Red
+spawners:
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -97.5;79;0.5;0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Blue
+  type: iron
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -97.5;79;0.5;0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Blue
+  type: gold
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: 98.5;79;0.5;0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Red
+  type: iron
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: 98.5;79;0.5;0;0.0
+  customName: null
+  startLevel: 1.0
+  team: Red
+  type: gold
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: 0.5;78;-51.5;0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: diamond
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: 0.5;78;52.5;0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: diamond
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: -20.5;77;-20.5;0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: emerald
+- maxSpawnedResources: 32
+  hologramEnabled: true
+  location: 21.5;77;21.5;0;0.0
+  customName: null
+  startLevel: 1.0
+  team: null
+  type: emerald
+stores:
+- loc: -93.5;79;8.5;0.0;0.0
+  parent: 'true'
+  shop: shop.yml
+  name: Item Shop
+  type: VILLAGER
+- loc: 94.5;79;-7.5;180.0;0.0
+  parent: 'true'
+  shop: shop.yml
+  name: Item Shop
+  type: VILLAGER
+constant:
+  join-random-team-on-join: 'false'
+constant.join-random-team-on-join: 'false'
